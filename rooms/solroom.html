@@ -1,69 +1,37 @@
+<!-- Semester Project Phase 3 Sol Room Page-->
 <!DOCTYPE html>
 <html lang="en">
 <!-- Header -->
 <head>
-<title>Sol Room</title>
-<meta charset="utf-8">
-<link href="../styles/styles.css" rel="stylesheet">
-<style>
-    #slideshow-container {
-      max-width: 600px;
-      margin: 30px auto;
-      position: relative;
-    }
-
-    .mySlides {
-      display: none;
-    }
-
-    .mySlides img {
-      width: 100%;
-      height: auto;
-    }
-
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -22px;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      background-color: rgba(0,0,0,0.5);
-      border-radius: 3px;
-    }
-
-    .next {
-      right: 0;
-    }
-
-    .prev {
-      left: 0;
-    }
-
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-
-    .resources-section {
-      text-align: left;
-    }
-
-    .takeALook-section {
-      text-align: center;
-      margin-top: 40px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <title>Sol Room</title>
+  <link href="../styles/styles.css" rel="stylesheet">
 </head>
- <!-- End Header -->
-  <!-- Main Content -->
+
 <body>
 <div id="wrapper">
   <header>
 	<h2 class="w3-wide">Sol Room <span style='font-size:25px;'>&#9788;</span></h2>
+	<h4>Get Back to Earth</h4>
+	<img src="../images/logo.jpg" alt="Logo">
   </header>
+<!-- End of Header -->
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../rooms/solroom.html">Sol Room</a></li>
+        <li><a href="../rooms/lunaroom.html">Luna Room</a></li>
+        <li><a href="../events/special_events.html">Special Events</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+	<!-- End of Navigation --> 
+ 
+  <!-- Main Content -->
+<body>
+<div id="wrapper">
   <div>
 	<dl>
 		<dt><strong>Prices</strong></dt>
@@ -78,62 +46,12 @@
 		<dt><strong>What You'll Experience</strong></dt>
 			<dd>Escape the hustle and bustle of everyday life in this peaceful retreat, nestled in the gentle embrace of rolling hills. Here, tranquility reigns and time slows down, offering you the perfect sanctuary to recharge and reconnect with yourself in the warm of the sun.</dd>
 	</dl>
-		Take A Look:
-			<img src="../images/sol1.jpg" alt="Balcony" width="350" height="110"> <!-- Image -->
-			<img src="../images/sol2.jpg" alt="Balcony" width="125" height="110"> <!-- Image -->
+		<h2 class="w3-wide">Take A Look:</h2>
+			<img src="../images/sol1.jpg" alt="Balcony" width="500" height="425"> <!-- Image -->
+			<img src="../images/sol2.jpg" alt="Pool" width="500" height="425"> <!-- Image -->
 </div>
-<!-- Navigation -->
-  <nav>
-  <ul> 
-    <li><a href="index.html">Home</a></li>
-	<li><a href="rooms/solroom.html">Sol Room</a></li>
-	<li><a href="rooms/lunaroom.html">Luna Room</a></li>
-	<li><a href="weekend.html">Weekend Events</a></li>
-	<li><a href="contact.html">Contact</a></li>
-  </ul>
-  </nav>
-  <main>
-  <img src="../images/scenery.jpg" alt="Overlook of Hills" width="750" height="500">
-  </main>
-  <!-- Take A Look Section - Centered and Separated -->
-  <div class="takeALook-section">
-    <h2>Take A Look:</h2>
-    <div id="slideshow-container">
-	<div class="mySlides">
-	  <img src="../images/Slide2.jpg" alt="Hideaway Hiking">
-	</div>
-	<div class="mySlides">
-	  <img src="../images/Slide3.jpg" alt="Stargazing">
-	</div>
-	<div class="mySlides">
-	  <img src="../images/Slide4.jpg" alt="Concert at the Caves">
-	</div>
-      
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-  </div>
-  <!-- End Take A Look Section -->
+  <!-- End of Main Content -->
 
-  <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slides[slideIndex-1].style.display = "block";
-    }
-  </script>
   <!-- Footer -->
   <footer>
   Copyright &copy; 2025<br>

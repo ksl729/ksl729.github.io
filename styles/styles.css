@@ -1,3 +1,4 @@
+/* Semester Project Phase 3 Special Events Page */
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +24,9 @@ body {
 
 /* Header */
 header {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(125, 155, 140, 0.6);
+  padding: 20px;
+  text-align: center;
   padding: 20px;
   text-align: center;
 }
@@ -35,22 +38,20 @@ header img {
 
 /* Headings */
 h1 {
-  background-image: url('../images/logo.jpg');
-  background-repeat: no-repeat;
-  background-color: #F4E8BC;
+  background-color: #CFC5C6;
   height: 110px;
   font-family: "Lucida Bright", Georgia, serif;
   font-size: 4.5em;
   padding-left: 220px;
   padding-top: 20px;
-  text-shadow: 3px 3px 3px #90745D;
+  text-shadow: 3px 3px 3px #b9a492;
   margin-bottom: 0;
-  color: #BF7154;
+  color: #d6a28f;
 }
 
 h2 {
   margin: 20px 0 10px 0;
-  color: #6B3F2B;
+  color: #b66b49;
 }
 
 h4 {
@@ -79,12 +80,12 @@ nav ul li {
 nav a {
   color: white;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #4E4A36;
+  text-shadow: 1px 1px 1px #d5d2c3;
 }
 
 nav a:link { color: white; }
-nav a:visited { color: #46413E; }
-nav a:hover { color: #A0522D; }
+nav a:visited { color: #c3bebb; }
+nav a:hover { color: #e3b29c; }
 
 /* Main content */
 main {
@@ -100,88 +101,12 @@ main img {
   margin-left: 20px;
 }
 
-/* Resources Section */
-.resources-section {
-  text-align: left;
-  margin-top: 20px;
-}
-
-.resources-section nav ul {
-  background: transparent;
-  padding: 0;
-}
-
-.resources-section nav ul li {
-  display: block;
-  margin: 6px 0;
-  font-weight: normal;
-}
-
-.resources-section nav a {
-  color: #BF7154;
-  text-decoration: underline;
-}
-
-/* Slideshow */
-#slideshow-container {
-  max-width: 600px;
-  margin: 30px auto;
-  position: relative;
-}
-
-.mySlides {
-  display: none;
-}
-
-.mySlides img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 3px;
-  text-decoration: none;
-  user-select: none;
-}
-
-.next { right: 0; }
-.prev { left: 0; }
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Take A Look Section */
-.takeALook-section {
-  text-align: center;
-  margin-top: 40px;
-}
-
 /* Footer */
 footer {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(111,93,95,0.6);
   padding: 8px;
   text-align: center;
   z-index: 1000;
   font-size: small;
   font-style: italic;
-}
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  h1 { font-size: 2.2em; padding-left: 160px; height: 90px; }
-  header img { max-width: 150px; }
-  main img { float: none; max-width: 100%; margin: 0 0 15px 0; }
-  nav ul li { display: block; margin: 8px 0; }
 }
