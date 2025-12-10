@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Header -->
+<head>
+<title>Luna Room</title>
+<meta charset="utf-8">
+<link href="../styles/styles.css" rel="stylesheet">
+<style>
+    #slideshow-container {
+      max-width: 600px;
+      margin: 30px auto;
+      position: relative;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .mySlides img {
+      width: 100%;
+      height: auto;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 3px;
+    }
+
+    .next {
+      right: 0;
+    }
+
+    .prev {
+      left: 0;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .resources-section {
+      text-align: left;
+    }
+
+    .takeALook-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+ <!-- End Header -->
+  <!-- Main Content -->
+<body>
+<div id="wrapper">
+  <header>
+	<h2 class="w3-wide">Luna Room <span style='font-size:25px;'>&#9789;</span></h2>
+  </header>
+  <div>
+	<dl>
+		<dt><strong>Prices</strong></dt>
+			<dd>$109.99 per night</dd>
+		<dt><strong>Amenities</strong></dt>
+			<dd>Wi-Fi</dd>
+			<dd>Controlled Access/Gated</dd>
+			<dd>Gazebo</dd>
+			<dd>Solar-Panel Lit Pathways</dd>
+			<dd>Balcony</dd>
+			<dd>Resort-Inspired Pool</dd>
+		<dt><strong>What You'll Experience</strong></dt>
+			<dd>A secluded sanctuary where weathered wooden beams frame softly lit corners, this intimate retreat beckons as daylight fades. Vintage lanterns cast a warm amber glow across reclaimed timber walls, while plush, earth-toned textiles invite you to settle in. The space whispers of quieter times—a hideaway designed for twilight gatherings, candlelit conversations, and the gentle unwinding that only evening hours can bring. Here, rustic charm meets purposeful tranquility, creating the perfect backdrop for nocturnal pursuits and peaceful reflection..</dd>
+	</dl>
+		Take A Look:
+			<img src="../images/luna1.jpg" alt="Balcony" width="125" height="110"> <!-- Image -->
+			<img src="../images/luna2.jpg" alt="Balcony" width="125" height="110"> <!-- Image -->
+</div>
+<!-- Navigation -->
+  <nav>
+  <ul> 
+    <li><a href="index.html">Home</a></li>
+	<li><a href="rooms/solroom.html">Sol Room</a></li>
+	<li><a href="rooms/lunaroom.html">Luna Room</a></li>
+	<li><a href="weekend.html">Weekend Events</a></li>
+	<li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <main>
+  <img src="../images/scenery.jpg" alt="Overlook of Hills" width="750" height="500">
+  </main>
+  <!-- Take A Look Section - Centered and Separated -->
+  <div class="takeALook-section">
+    <h2>Take A Look:</h2>
+    <div id="slideshow-container">
+	<div class="mySlides">
+	  <img src="../images/Slide2.jpg" alt="Hideaway Hiking">
+	</div>
+	<div class="mySlides">
+	  <img src="../images/Slide3.jpg" alt="Stargazing">
+	</div>
+	<div class="mySlides">
+	  <img src="../images/Slide4.jpg" alt="Concert at the Caves">
+	</div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+  </div>
+  <!-- End Take A Look Section -->
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+  </script>
+  <!-- Footer -->
+  <footer>
+  Copyright &copy; 2025<br>
+	<a href="mailto:ksleach21@amarillocollege.com">Karly Leach</a> <!-- Email -->
+  </footer>
+<!-- End Footer -->
+</body>
+</html>
