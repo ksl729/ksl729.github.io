@@ -1,0 +1,122 @@
+<!-- Semester Project Phase 5 Special Events Page-->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Header -->
+<head>
+  <meta charset="utf-8">
+  <title>Special Events</title>
+  <link href="../styles/styles.css" rel="stylesheet">
+  <script>
+    function showHikeDetails() {
+      document.getElementById("hikeDemo").innerHTML = "Every Saturday at 8 a.m. Start your day with a refreshing morning hike through our scenic trails.";
+    }
+
+function showConcertDetails() {
+  document.getElementById("concertDemo").innerHTML = "Saturday @ 6 p.m. Enjoy an evening of live music in the unique acoustics of our local caves.";
+}
+
+function showStargazingDetails() {
+  document.getElementById("stargazingDemo").innerHTML = "Sunday @ 8 p.m. (Sundown) Experience the night sky like never before with our guided stargazing session.";
+}
+  
+
+</script>
+</head>
+
+
+<body>
+<div id="wrapper">
+  <header>
+    <h2 class="w3-wide">Terra Cottages</h2>
+    <h4>Get Back to Earth</h4>
+    <img src="../images/logo.jpg" alt="Logo">
+  </header>
+<!-- End of Header -->
+
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../rooms/solroom.html">Sol Room</a></li>
+    <li><a href="../rooms/lunaroom.html">Luna Room</a></li>
+    <li><a href="special_events.html">Special Events</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+  </ul>
+</nav>
+<!-- End of Navigation -->
+
+<!-- Main Content -->
+<main>
+  <h2>Special Events</h2>
+  <p>Join us for these wonderful experiences at our Bed & Breakfast</p>
+
+<!-- Learn More Options -->
+<h4>Hideaway Hike</h4>
+<p id="hikeDemo">Click below for more details.</p>
+<button type="button" onclick="showHikeDetails()">Learn More</button>
+
+<h4>Concert in the Caves</h4>
+<p id="concertDemo">Click below for more details.</p>
+<button type="button" onclick="showConcertDetails()">Learn More</button>
+
+<h4>Stellar Stargazing</h4>
+<p id="stargazingDemo">Click below for more details.</p>
+<button type="button" onclick="showStargazingDetails()">Learn More</button>
+
+    <!-- Photo Gallery -->
+    <h2 class="w3-wide">Take A Look:</h2>
+  
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../images/Slide1.png">
+          <img src="../images/Slide1.png" alt="Balcony" width="600" height="400">
+        </a>
+        <div class="desc">Sol Room Balcony</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../images/Slide2.png">
+          <img src="../images/Slide2.png" alt="Hiking" width="600" height="400">
+        </a>
+        <div class="desc">Hideaway Hiking Trail</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../images/Slide3.png">
+          <img src="../images/Slide3.png" alt="Stargazing" width="600" height="400">
+        </a>
+        <div class="desc">Stargazing Experience</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../images/Slide4.png">
+          <img src="../images/Slide4.png" alt="Concert" width="600" height="400">
+        </a>
+        <div class="desc">2024 Concert in the Caves</div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div style="padding:6px;">
+      <p>Explore the events you can add to your adventure!</p>
+    </div>
+</main>
+<!-- End of Main Content -->
+
+<!-- Footer -->
+  <footer>
+    Copyright &copy; 2025<br>
+    <a href="mailto:ksleach21@amarillocollege.com">Karly Leach</a>
+  </footer>
+<!-- End of Footer -->
+</div>
+</body>
+</html>

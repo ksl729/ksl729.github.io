@@ -1,0 +1,236 @@
+/* Semester Project Phase 5 CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #F4E3C2;
+  font-family: "Lucida Bright", Georgia, serif;
+  line-height: 1.6;
+}
+
+/* Wrapper */
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #EEDCB5;
+  color: #BF7154;
+  box-shadow: 5px 5px 5px #CBB7A2;
+}
+
+/* Header */
+header {
+  background-color: rgba(125, 155, 140, 0.6);
+  padding: 20px;
+  text-align: center;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Headings */
+h1 {
+  background-color: #CFC5C6;
+  height: 110px;
+  font-family: "Lucida Bright", Georgia, serif;
+  font-size: 4.5em;
+  padding-left: 220px;
+  padding-top: 20px;
+  text-shadow: 3px 3px 3px #b9a492;
+  margin-bottom: 0;
+  color: #d6a28f;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+  color: #b66b49;
+}
+
+h4 {
+  margin: 15px 0 5px 0;
+  color: #6B3F2B;
+}
+
+/* Navigation */
+nav {
+  padding-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #d5d2c3;
+}
+
+nav a:link { color: white; }
+nav a:visited { color: #c3bebb; }
+nav a:hover { color: #e3b29c; }
+
+/* Main content */
+main {
+  background-color: #C9C0B9;
+  padding: 20px 20px;
+  min-height: 300px;
+  overflow: auto;
+}
+
+main img {
+  float: right;
+  max-width: 40%;
+  margin-left: 20px;
+}
+
+/* Photo Gallery */
+div.gallery {
+  border: 1px solid #333;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(111,93,95,0.6);
+  padding: 8px;
+  text-align: center;
+  z-index: 1000;
+  font-size: small;
+  font-style: italic;
+}
+
+/* Form Styles */
+.responsive-form {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 4px;
+  border: 4px solid #6B3F2B;
+  background-color: #C9C0B9;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.responsive-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.responsive-form label {
+  min-width: 48%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "Lucida Bright", Georgia, serif;
+  color: #6B3F2B;
+}
+
+.responsive-form input[type=text], 
+.responsive-form select {
+  min-width: 45%;
+  margin-bottom: 10px;
+  border: 1px solid #6f5d5f;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: "Lucida Bright", Georgia, serif;
+  background-color: white;
+}
+
+.responsive-form textarea {
+  min-width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  border: 1px solid #6f5d5f;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: "Lucida Bright", Georgia, serif;
+  background-color: white;
+}
+
+.responsive-form input[type=submit] {
+  width: 100%;
+  background-color: #6f5d5f;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Lucida Bright", Georgia, serif;
+}
+
+.responsive-form input[type=submit]:hover {
+  background-color: #6B3F2B;
+}
+
+/* Mobile & Tablet Responsiveness */
+@media screen and (max-width: 600px) {
+  .responsive-form label,
+  .responsive-form input[type=text],
+  .responsive-form input[type=submit],
+  .responsive-form select, 
+  .responsive-form textarea {
+    flex: 100%;
+    min-width: 100%;
+  }
+}
