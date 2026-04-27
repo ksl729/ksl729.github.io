@@ -1,0 +1,656 @@
+/* Case Project 5 Main CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #F4E3C2;
+  font-family: "Lucida Bright", Georgia, serif;
+  line-height: 1.6;
+}
+
+/* Wrapper */
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #EEDCB5;
+  color: #BF7154;
+  box-shadow: 5px 5px 5px #CBB7A2;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background-color: rgba(125, 155, 140, 0.6);
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Headings */
+h1 {
+  background-color: #CFC5C6;
+  height: 110px;
+  font-family: "Lucida Bright", Georgia, serif;
+  font-size: 4.5em;
+  padding-left: 220px;
+  padding-top: 20px;
+  text-shadow: 3px 3px 3px #b9a492;
+  margin-bottom: 0;
+  color: #d6a28f;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+  color: #b66b49;
+}
+
+h3 {
+  margin: 15px 0 5px 0;
+  color: #6B3F2B;
+}
+
+h4 {
+  margin: 15px 0 5px 0;
+  color: #6B3F2B;
+}
+
+/* Navigation */
+nav {
+  padding-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #333;
+  padding: 10px;
+
+  /* Wrap instead of overflowing on mobile */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav ul li {
+  display: block;
+  margin-right: 0;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #d5d2c3;
+}
+
+nav a:link { color: white; }
+nav a:visited { color: #c3bebb; }
+nav a:hover { color: #e3b29c; }
+
+/* Main content */
+main {
+  background-color: #C9C0B9;
+  padding: 20px;
+  min-height: 300px;
+  overflow: auto;
+}
+
+main img {
+  float: right;
+  max-width: 40%;
+  margin-left: 20px;
+}
+
+/* Paragraph */
+p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin: 15px;
+}
+
+/* Review styles */
+
+table {
+  width: 450px;
+  border-collapse: collapse;
+  margin: 15px auto;
+  background-color: #e8d37ee4;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px black;
+}
+
+table.prime {
+  background: url(../images/prime.png) no-repeat top right rgba(125, 155, 140, 0.6);
+}
+
+table.new {
+  background: url(../images/new.png) no-repeat top right #d6a28f;
+}
+
+table caption {
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+}
+
+table tr th {
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0 0 15px;
+  width: 120px;
+}
+
+table tr td {
+  text-align: left;
+  padding: 5px 0 0 12px;
+}
+
+table tr:last-of-type td {
+  padding: 20px;
+  text-align: justify;
+}
+
+
+/*Order Page Section Styles*/
+
+section#summary {
+  flex: 1 1 50px;
+  padding: 20px 0px 10px 20px;
+}
+
+section#summary h1 {
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+section#summary h2 {
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+section#summary h3 {
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+section#summary > img {
+  display: block;
+  width: 50%;
+  margin: 0px auto;
+}
+
+section#summary p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+section#orderSection {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+/* Order Table Styles */
+table#orderTable {
+  margin: 15px;
+  width: 95%;
+  border-collapse: collapse;
+  font-size: 1.3em;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  /* Deterministic column widths */
+  table-layout: fixed;
+}
+
+/* Column widths (3-column consistent layout) */
+table#orderTable td:nth-child(1) { width: 60%; }
+table#orderTable td:nth-child(2) { width: 25%; }
+table#orderTable td:nth-child(3) { width: 15%; }
+
+table#orderTable label {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0;
+  vertical-align: middle;
+  display: inline-block;
+  width: auto;
+}
+
+table#orderTable select {
+  margin-left: 10px;
+  vertical-align: middle;
+
+  /* Enforces consistent dropdown width for size/addon selects */
+  width: 220px;
+  min-width: 220px;
+}
+
+/* Qty dropdowns */
+table#orderTable select#qty,
+table#orderTable select#qtyPlan {
+  width: 90px;
+  min-width: 90px;
+  margin-left: 10px;
+}
+
+/* Keeps label + dropdown from wrapping awkwardly */
+table#orderTable td:first-of-type {
+  white-space: nowrap;
+}
+
+table#orderTable caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-align: left;
+  caption-side: top;
+  margin-bottom: 20px;
+}
+
+table#orderTable td {
+  height: 40px;
+  vertical-align: middle;
+}
+
+/* Right column text alignment */
+table#orderTable td.rightA {
+  text-align: justify;
+  padding-right: 1px;
+}
+
+table#orderTable tr td:last-of-type input {
+  text-align: left;
+  border: none;
+  font-size: 0.75em;
+}
+
+table#orderTable tr:nth-of-type(2) td {
+  vertical-align: middle;
+  padding-bottom: 20px;
+}
+
+table#orderTable tr:nth-of-type(2) td:first-of-type {
+  border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+table#orderTable tr:nth-of-type(2) td:nth-of-type(2) {
+  border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+table#orderTable tr:nth-of-type(4) td {
+  border-bottom: 6px double rgb(151, 151, 151);
+}
+
+table#orderTable tr:nth-of-type(1) td,
+table#orderTable tr:nth-of-type(3) td {
+  padding-top: 15px;
+}
+
+table#orderTable tr:last-of-type td {
+  padding-top: 15px;
+}
+
+table#orderTable legend {
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+/* Order Form Styles */
+form#orderForm fieldset {
+  border: none;
+  margin-left: -10px;
+}
+
+form#orderForm input[type="text"] {
+  background-color: rgba(240, 233, 222, 0.5);
+  color: rgb(101, 101, 101);
+}
+
+form#orderForm select {
+  display: inline-block;
+  margin-left: 10px;
+  color: rgb(101, 101, 101);
+}
+
+form#orderForm fieldset label {
+  line-height: 2;
+  display: inline-block;
+}
+
+form#orderForm input#buttonAdd {
+  display: block;
+  width: 150px;
+  height: 75px;
+  margin: 15px auto;
+  background-color: #6B3F2B;
+  font-size: 1.3em;
+  border-radius: 20px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Photo Gallery */
+div.gallery {
+  border: 1px solid #333;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Article */
+article {
+  width: 100%;
+  max-width: 960px;
+  min-height: 250px;
+  text-align: left;
+  background-color: #C9C0B9;
+  margin: 20px auto;
+  padding: 20px;
+  overflow: auto;
+}
+
+article h2 {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px;
+  margin: 20px 0 10px 0;
+  color: #b66b49;
+  font-family: "Lucida Bright", Georgia, serif;
+}
+
+/* Form */
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input {
+  float: left;
+  clear: left;
+  margin: 10px;
+  border: 1px solid #6f5d5f;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: "Lucida Bright", Georgia, serif;
+  background-color: white;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #6f5d5f;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Lucida Bright", Georgia, serif;
+}
+
+input[type=submit]:hover {
+  background-color: #6B3F2B;
+}
+
+label {
+  float: left;
+  font-size: 1.4em;
+  min-width: 48%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "Lucida Bright", Georgia, serif;
+  color: #6B3F2B;
+}
+
+/* Aside */
+aside {
+  position: relative;
+  outline: 1px solid #6B3F2B;
+  background-color: #EEDCB5;
+  padding: 10px;
+  color: #BF7154;
+  font-family: "Lucida Bright", Georgia, serif;
+  min-height: 150px;
+}
+
+aside span {
+  position: absolute;
+  font-size: 1.4em;
+  color: #6B3F2B;
+}
+
+aside span#totalLab {
+  top: 0px;
+  left: 0px;
+  width: 220px;
+}
+
+aside span#roomTotal {
+  top: 0px;
+  left: 280px;
+  width: 100px;
+  text-align: right;
+}
+
+aside span#taxLab {
+  top: 50px;
+  left: 0px;
+  width: 220px;
+}
+
+aside span#roomTax {
+  top: 50px;
+  left: 280px;
+  width: 100px;
+  text-align: right;
+}
+
+aside span#billLab {
+  top: 100px;
+  left: 0px;
+  width: 220px;
+}
+
+aside span#totalBill {
+  top: 100px;
+  left: 280px;
+  width: 100px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(111, 93, 95, 0.6);
+  padding: 8px;
+  text-align: center;
+  z-index: 1000;
+  font-size: small;
+  font-style: italic;
+}
+
+/* Form Styles */
+.responsive-form {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 4px;
+  border: 4px solid #6B3F2B;
+  background-color: #C9C0B9;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.responsive-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.responsive-form label {
+  min-width: 48%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "Lucida Bright", Georgia, serif;
+  color: #6B3F2B;
+}
+
+.responsive-form input[type=text],
+.responsive-form select {
+  min-width: 45%;
+  margin-bottom: 10px;
+  border: 1px solid #6f5d5f;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: "Lucida Bright", Georgia, serif;
+  background-color: white;
+}
+
+.responsive-form textarea {
+  min-width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  border: 1px solid #6f5d5f;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: "Lucida Bright", Georgia, serif;
+  background-color: white;
+}
+
+.responsive-form input[type=submit] {
+  width: 100%;
+  background-color: #6f5d5f;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Lucida Bright", Georgia, serif;
+}
+
+.responsive-form input[type=submit]:hover {
+  background-color: #6B3F2B;
+}
+
+/* Mobile & Tablet Responsiveness */
+@media screen and (max-width: 600px) {
+  /* ADDED/ADJUSTED: slightly reduce padding to help vertical fit */
+  #wrapper {
+    padding: 12px;
+  }
+
+  .responsive-form label,
+  .responsive-form input[type=text],
+  .responsive-form input[type=submit],
+  .responsive-form select,
+  .responsive-form textarea {
+    flex: 100%;
+    min-width: 100%;
+  }
+
+  article {
+    width: 100%;
+    padding: 10px;
+  }
+
+  label,
+  input[type=text],
+  input[type=submit] {
+    flex: 100%;
+    min-width: 100%;
+  }
+
+  aside {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Tighten nav spacing on small screens */
+  nav ul {
+    gap: 8px;
+  }
+}
