@@ -1,0 +1,74 @@
+<!-- Case Project 5 Contact Page-->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Header -->
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Your Cart</title>
+<link href="../styles/styles.css" rel="stylesheet">
+<link href="../styles/stylessubmit.css" rel="stylesheet">
+<link href="../styles/cart.css" rel="stylesheet">
+<script src="../scripts/common.js" defer></script>
+<script src="../scripts/cart.js" defer></script>
+</head>
+<!-- End Header -->
+
+<body onload="getCart()">
+<div id="wrapper">
+  <header>
+	<h2 class="w3-wide">Terra Cottages</h2>
+	<h4>Come Back to Earth</h4>
+	<img src="../images/logo.jpg" alt="Logo">
+  </header>
+  
+<!-- Navigation -->
+  <nav>
+  <ul> 
+    <li><a href="../index.html">Home</a></li>
+	<li><a href="../rooms/solroom.html">Sol Room</a></li>
+	<li><a href="../rooms/lunaroom.html">Luna Room</a></li>
+	<li><a href="../events/special_events.html">Special Events</a></li>
+	<li><a href="../gallery/gallery.html">Gallery</a></li>
+	<li><a href="../reserve/reservation.html">Reserve Now</a></li>
+	<li><a href="../store/order_page.html">Store</a></li>
+    <li><a href="../store/cart.html">Cart</a></li>
+	<li><a href="../reviews/reviews.html">Reviews</a></li>
+	<li><a href="../contact.html">Contact</a></li>
+  </ul>
+  </nav>
+<!-- End Navigation -->
+
+	<!-- Page Content -->
+	<main>
+    <section>
+        <p>Welcome to your Terra Cottages Shopping Cart! Review the items you’ve added, adjust quantities as you go, and head to checkout when you’re ready.</p>
+    </section>
+
+    
+<main class="container">
+    <section class="intro-card">
+      <h2>Shopping Cart</h2>
+    </section>
+
+    <!-- Single cart-area (remove the earlier one) -->
+    <section id="cart-area" class="cart-card"></section>
+
+    <div class="total-box">
+    <br><strong>Subtotal: $</strong><span id="total-box">0.00</span></br>
+    <br><strong>Tax: $</strong><span id="tax-box">0.00</span></br>
+    <br><strong>Total: $</strong><span id="grand-total-box">0.00</span></br>
+    <input type="submit" id="buttonSubmitOrder" value="Submit Order" />
+    </div>
+	</main>
+<!-- End Page Content -->
+<!-- Footer -->
+  <footer>
+  Copyright &copy; 2026<br>
+	<a href="mailto:ksleach21@amarillocollege.com">Karly Leach</a> <!-- Email -->
+  </footer>
+<!-- End Footer -->
+</div>
+</body>
+</html>
