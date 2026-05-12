@@ -1,6 +1,6 @@
 /* Case Project 6 - Map & Weather CSS */
 
-body { font-family: Lucida, serif; margin: 20px; }
+body 
     .layout { display: flex; gap: 20px; align-items: flex-start; }
     .content { flex: 1; }
 
